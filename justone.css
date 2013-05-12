@@ -1,0 +1,94 @@
+@charset "IBM437";
+* {
+  font-family: Georgia,roman,serif; }
+
+html {
+  background: #45342d;
+  text-color: black;
+  min-height: 100%; }
+
+body {
+  margin: 2%;
+  background: #785b4f;
+  border-color: #2b201c;
+  border-style: solid;
+  border-width: 1px;
+  border-top-left-radius: 0.1in;
+  border-top-right-radius: 0.1in;
+  padding-bottom: 2%;
+  min-height: 90%; }
+
+heading h1 {
+  background: -webkit-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, gray 0%, gray 17%, #2b201c 100%);
+  /* W3C */
+  text-align: center;
+  margin: 0;
+  border-top-left-radius: 0.1in;
+  border-top-right-radius: 0.1in; }
+heading p {
+  margin: 4%; }
+
+article {
+  margin-left: 1%;
+  margin-right: 1%; }
+  article section {
+    background-color: rgba(33, 33, 33, 0.3);
+    border-radius: 0.1in;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+    article section h2 {
+      margin: 1%; }
+      article section h2::after {
+        content: "►"; }
+      article section h2 a:link {
+        color: black; }
+      article section h2 a:visited {
+        color: black; }
+      article section h2 a:activated {
+        color: white; }
+    article section.expanded h2::after {
+      content: "▼"; }
+    article section ul {
+      display: none;
+      list-style-type: none; }
+      article section ul a:link {
+        color: #faede8; }
+      article section ul a:visited {
+        color: #e4a387; }
+      article section ul a:activated {
+        color: white; }
+      article section ul p.about {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: .3in;
+        padding: .07in;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 0.06in;
+        background: #455F6A;
+        display: inline-block; }
+    article section.expanded ul {
+      display: block; }
+
+footer {
+  margin-top: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: smaller; }
+  footer a:link {
+    color: black; }
+  footer a:visited {
+    color: #e4a387; }
+  footer a:activated {
+    color: white; }
+  footer .copyright {
+    color: black;
+    text-align: center; }

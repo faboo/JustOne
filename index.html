@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="justone.css" type="text/css" media=screen>
+  <title>Just One</title>
+</head>
+
+<body>
+  <heading>
+    <h1>Just One Thing</h1>
+
+    <p>
+      The websites that follow do one thing. They're simple and to-the-point,
+      often only a single page. The categories are loose, but hopefully keep
+      things tractable.
+    </p>
+  </heading>
+
+  <article data-bind="foreach: section">
+    <section data-bind="css: { expanded: open() }">
+      <h2>
+        <a data-bind="click:onOpen, text:name, attr:{ href:'#'+name }"></a>
+      </h2>
+
+      <ul data-bind="foreach: site">
+        <li>
+          <p class="site">
+          <a data-bind="text:name, attr:{ href:url }"></a>
+          </p>
+          <p class="about" data-bind="visible: about, text:about"></p>
+        </li>
+      </ul>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      This page is really a place for my friends and I to put tools we like.
+      The source for this site, little as there is, can be found on Github.
+      Feel free to <a href="">issue a pull request</a> if you know of sites
+      that would make good additions!
+    </p>
+    <p class="copyright">Copyright © 2013 Ray Wallace</p>
+  </footer>
+
+</body>
+
+<script id="data_sites" type="text/javascript" src="sites.json"></script>
+<script type='text/javascript' src="jquery-2.0.0.min.js"></script>
+<script type='text/javascript' src="underscore-1.4.4.js"></script>
+<script type='text/javascript' src="knockout-2.2.1.js"></script>
+<script type='text/javascript' src="justone.js"></script>
+
+</html>

@@ -1,0 +1,1 @@
+sass --watch justone.scss:justone.css

@@ -1,0 +1,130 @@
+var sites = {
+  "section": [
+    {
+      "name": "Amusements",
+      "site": [
+        {
+          "url": "http://iseyjafjallajokullstillerupting.com/",
+          "about": "Check on Iceland's volcano, Eyjafjallajokull."
+        },
+        {
+          "url": "http://generatedpaper.com/",
+          "about": "Download and print a variety of lined-paper patterns; many customizable."
+        },
+        {
+          "url": "http://soundbible.com/",
+          "about": "Search for public domain and licensible sound effects."
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "site": [
+        {
+          "url": "http://caniuse.com/",
+          "about": "A fairly exhaustive accounting of HTML5 feature support in major web browsers."
+        },
+        {
+          "url": "http://scratchpad.io/",
+          "about": "Edit HTML and CSS and see the updates live."
+        },
+        {
+          "url": "http://entitycode.com/",
+          "about": "A complete least of HTML named entities."
+        },
+        {
+          "url": "http://www.downforeveryoneorjustme.com/",
+          "about": "Test a web address to see if it's down for everybody, or just you."
+        },
+        {
+          "url": "http://www.isup.me/",
+          "about": "Test a web address to see if it's down for everybody, or just you."
+        },
+        {
+          "url": "http://lorempixel.com/",
+          "about": "Test images to drop-in until your real assets are done."
+        },
+        {
+          "url": "http://placekitten.com/",
+          "about": "Test (kitten!) images to drop-in until your real assets are done."
+        },
+        {
+          "url": "http://httpbin.org/",
+          "about": "A variety of canned responses to common HTTP requests."
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "site": [
+        {
+          "url": "http://0to255.com/",
+          "about": "Browse shades of specific colors."
+        },
+        {
+          "url": "http://generator.lorem-ipsum.info/",
+          "about": "Generate Lorem Ipsum copy to design around."
+        },
+        {
+          "url": "http://chromanope.com/",
+          "about": "See your web pages as colorblind people see them."
+        }
+      ]
+    },
+    {
+      "name": "Parsers and Interpreters",
+      "site": [
+        {
+          "url": "http://www.regexper.com/",
+          "about": "Compile and visualize JavaScript regular expressions."
+        },
+        {
+          "url": "http://www.gskinner.com/RegExr/",
+          "about": "Test JavaScript regular expressions."
+        },
+        {
+          "url": "http://derekslager.com/blog/posts/2007/09/a-better-dotnet-regular-expression-tester.ashx",
+          "about": "Test .Net regular expressions."
+        },
+        {
+          "url": "http://www.regexplanet.com/advanced/java/index.html",
+          "about": "Test Java regular expressions."
+        },
+        {
+          "url": "http://yaml-online-parser.appspot.com/",
+          "about": "Convert YAML to JSON, Python, or the canonical format, with live updates."
+        },
+      ]
+    },
+    {
+      "name": "Unsorted",
+      "site": [
+        {
+          "url": "http://whatismyip.com/",
+          "about": "Check on what IP address the wider world sees you as."
+        },
+        {
+          "url": "http://whattimeisit.com/",
+          "about": "The current time."
+        },
+        {
+          "url": "http://everytimezone.com/",
+          "about": "The hours of the day across the timezones of the world, neatly visualized for your sanity."
+        },
+        {
+          "url": "http://www.connectionstrings.com/",
+          "about": "Windows ODBC connection string templates for most drivers."
+        },
+        {
+          "url": "http://hurl.it/",
+          "about": "Make custom HTTP requests and see the response in full, as recieved."
+        },
+        {
+          "url": "http://unicodelookup.com/#0xFFFD/1",
+          "about": "Lookup Unicode codepoints by character, HTML entity, UTF-8 hex value."
+        }
+      ]
+    }
+  ]
+}
+
