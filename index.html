@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <heading>
+  <header>
     <h1>Just One Thing</h1>
 
     <p>
@@ -15,12 +15,12 @@
       often only a single page. The categories are loose, but hopefully keep
       things tractable.
     </p>
-  </heading>
+  </header>
 
   <article data-bind="foreach: section">
     <section data-bind="css: { expanded: open() }">
       <h2>
-        <a data-bind="click:onOpen, text:name, attr:{ href:'#'+name }"></a>
+        <a data-bind="click:onOpen, text:name, attr:{ name:name }"></a>
       </h2>
 
       <ul data-bind="foreach: site">
@@ -38,8 +38,8 @@
     <p>
       This page is really a place for my friends and I to put tools we like.
       The source for this site, little as there is, can be found on Github.
-      Feel free to <a href="">issue a pull request</a> if you know of sites
-      that would make good additions!
+      Feel free to <a href="https://github.com/faboo/JustOne">issue a pull
+      request</a> if you know of sites that would make good additions!
     </p>
     <p class="copyright">Copyright © 2013 Ray Wallace</p>
   </footer>

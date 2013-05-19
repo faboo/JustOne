@@ -1,9 +1,20 @@
-$dark-background-color: #45342D;
+/*$dark-background-color: #45342D;
 $light-background-color: #785b4f;
 $primary-color: gray;
+$section-background-color: rgba(33, 33, 33, .3);
 $accent-color: #2B201C;//#455F6A;
 $link-color: #faede8;
 $link-visited-color: #e4a387;
+$link-activated-color: white;
+$text-color: black;*/
+
+$dark-background-color: #275C4A;
+$light-background-color: #9DD6C2;
+$section-background-color: rgba(33, 33, 33, .3);
+$primary-color: gray;
+$accent-color: #2B201C;//#455F6A;
+$link-color: #faede8;
+$link-visited-color: #5C2739;
 $link-activated-color: white;
 $text-color: black;
 
@@ -12,16 +23,14 @@ $small-radius: .06in;
 
 $border-width: 1px;
 
-@mixin bumpGradient($first, $middle, $last) {
-  //background: -moz-linear-gradient(top,  $first 0%, $middle 17%, $last 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* IE10+ */
-  background: linear-gradient(to bottom, $first 0%, $middle 17%, $last 100%); /* W3C */
+@mixin bumpGradient($first, $middle, $midat, $last) {
+  background: -webkit-linear-gradient(top, $first 0%, $middle $midat, $last 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $first 0%, $middle $midat, $last 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $first 0%, $middle $midat, $last 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $first 0%, $middle $midat, $last 100%); /* W3C */
 }
 
 @mixin bumpGradientBorder($first, $middle, $last) {
-  //border-color: -moz-linear-gradient(top,  $first 0%, $middle 17%, $last 100%); /* FF3.6+ */
   border-image: -webkit-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* Chrome10+,Safari5.1+ */
   border-image: -o-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* Opera 11.10+ */
   border-image: -ms-linear-gradient(top, $first 0%, $middle 17%, $last 100%); /* IE10+ */
@@ -52,14 +61,18 @@ body {
   min-height: 90%;
 }
 
-heading {
+header{
   h1 {
-    @include bumpGradient($primary-color, $primary-color, $accent-color);
+    @include bumpGradient($accent-color, $primary-color, 20%, $primary-color);
     text-align: center;
     margin: 0;
     border: {
-      top-left-radius:$large-radius ;
+      top-left-radius: $large-radius;
       top-right-radius: $large-radius;
+    }
+    padding: {
+      top: 2.5ex;
+      bottom: 1.5ex;
     }
   }
 
@@ -75,8 +88,7 @@ article {
   }
 
   section {
-    //background-color: $dark-background-color;
-    background-color: rgba(33, 33, 33, .3);
+    background-color: $section-background-color;
     border: {
       //color: $accent-color;
       radius: $large-radius;
@@ -92,10 +104,12 @@ article {
       margin: 1%;
 
       &::after {
+        font-family: Courier New, monotype;
         content: "►"
       }
 
       a {
+        cursor: pointer;
         &:link {
           color: $text-color;
         }

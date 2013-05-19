@@ -55,11 +55,15 @@ var sites = {
       ]
     },
     {
-      "name": "Design",
+      "name": "Graphic Design",
       "site": [
         {
           "url": "http://0to255.com/",
           "about": "Browse shades of specific colors."
+        },
+        {
+          "url": "http://www.colorzilla.com/gradient-editor/",
+          "about": "Build cross-browser HTML5 gradients."
         },
         {
           "url": "http://generator.lorem-ipsum.info/",
@@ -120,7 +124,7 @@ var sites = {
           "about": "Make custom HTTP requests and see the response in full, as recieved."
         },
         {
-          "url": "http://unicodelookup.com/#0xFFFD/1",
+          "url": "http://unicodelookup.com/",
           "about": "Lookup Unicode codepoints by character, HTML entity, UTF-8 hex value."
         }
       ]

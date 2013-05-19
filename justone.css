@@ -1,15 +1,24 @@
 @charset "IBM437";
+/*$dark-background-color: #45342D;
+$light-background-color: #785b4f;
+$primary-color: gray;
+$section-background-color: rgba(33, 33, 33, .3);
+$accent-color: #2B201C;//#455F6A;
+$link-color: #faede8;
+$link-visited-color: #e4a387;
+$link-activated-color: white;
+$text-color: black;*/
 * {
   font-family: Georgia,roman,serif; }
 
 html {
-  background: #45342d;
+  background: #275c4a;
   text-color: black;
   min-height: 100%; }
 
 body {
   margin: 2%;
-  background: #785b4f;
+  background: #9dd6c2;
   border-color: #2b201c;
   border-style: solid;
   border-width: 1px;
@@ -18,20 +27,22 @@ body {
   padding-bottom: 2%;
   min-height: 90%; }
 
-heading h1 {
-  background: -webkit-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+header h1 {
+  background: -webkit-linear-gradient(top, #2b201c 0%, gray 20%, gray 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+  background: -o-linear-gradient(top, #2b201c 0%, gray 20%, gray 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, gray 0%, gray 17%, #2b201c 100%);
+  background: -ms-linear-gradient(top, #2b201c 0%, gray 20%, gray 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, gray 0%, gray 17%, #2b201c 100%);
+  background: linear-gradient(to bottom, #2b201c 0%, gray 20%, gray 100%);
   /* W3C */
   text-align: center;
   margin: 0;
   border-top-left-radius: 0.1in;
-  border-top-right-radius: 0.1in; }
-heading p {
+  border-top-right-radius: 0.1in;
+  padding-top: 2.5ex;
+  padding-bottom: 1.5ex; }
+header p {
   margin: 4%; }
 
 article {
@@ -47,13 +58,16 @@ article {
     article section h2 {
       margin: 1%; }
       article section h2::after {
+        font-family: Courier New, monotype;
         content: "►"; }
-      article section h2 a:link {
-        color: black; }
-      article section h2 a:visited {
-        color: black; }
-      article section h2 a:activated {
-        color: white; }
+      article section h2 a {
+        cursor: pointer; }
+        article section h2 a:link {
+          color: black; }
+        article section h2 a:visited {
+          color: black; }
+        article section h2 a:activated {
+          color: white; }
     article section.expanded h2::after {
       content: "▼"; }
     article section ul {
@@ -62,7 +76,7 @@ article {
       article section ul a:link {
         color: #faede8; }
       article section ul a:visited {
-        color: #e4a387; }
+        color: #5c2739; }
       article section ul a:activated {
         color: white; }
       article section ul p.about {
@@ -86,7 +100,7 @@ footer {
   footer a:link {
     color: black; }
   footer a:visited {
-    color: #e4a387; }
+    color: #5c2739; }
   footer a:activated {
     color: white; }
   footer .copyright {
