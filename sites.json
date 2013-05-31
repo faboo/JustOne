@@ -98,6 +98,14 @@ var sites = {
           "url": "http://yaml-online-parser.appspot.com/",
           "about": "Convert YAML to JSON, Python, or the canonical format, with live updates."
         },
+        {
+          "url": "http://urldecode.org/",
+          "about": "Decode URL-encoded strings."
+        },
+        {
+          "url": "http://urlencode.org/",
+          "about": "URL-encode strings."
+        },
       ]
     },
     {
