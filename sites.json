@@ -51,6 +51,14 @@ var sites = {
         {
           "url": "http://httpbin.org/",
           "about": "A variety of canned responses to common HTTP requests."
+        },
+        {
+          "url": "http://www.spritecow.com/",
+          "about": "Generate CSS for using individual sprites from a sprite sheet."
+        },
+        {
+          "url": "http://jsonprettyprint.com/",
+          "about": "Pretty-print JSON."
         }
       ]
     },
@@ -130,6 +138,10 @@ var sites = {
         {
           "url": "http://hurl.it/",
           "about": "Make custom HTTP requests and see the response in full, as recieved."
+        },
+        {
+          "url": "http://www.paintfont.com/",
+          "about": "Convert your handwriting into a font."
         },
         {
           "url": "http://unicodelookup.com/",

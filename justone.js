@@ -3,6 +3,8 @@
   function isOpen(section){
     return window.location.hash === '#'+section;
   }
+  var newestSize = 5;
+  var newest = [];
 
   _.each(sites.section, function(section){
     section.open = ko.observable(isOpen(section.name));
@@ -13,12 +15,22 @@
     }
 
     _.each(section.site, function(site){
-      site.name = site.url.
+      site.name = site.name || site.url.
         replace(/^https?:\/\/(www\.)?(.*)$/, "$2").
         replace(/\/?$/, "");
       site.about = site.about || null;
+	  site.time = site.time || null;
+	  site.section = section.name;
+
+	  if(site.time){
+		  newest.push(site);
+	  }
     });
   });
 
-  ko.applyBindings(sites, $('article')[0]);
+  sites.newest = _.chain(newest).sort(function(site){
+	  return -parseInt(site.time, 10);
+  }).take(newestSize).value();
+
+  ko.applyBindings(sites, $('body')[0]);
 })();

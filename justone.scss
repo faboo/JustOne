@@ -11,6 +11,7 @@ $text-color: black;*/
 $dark-background-color: #275C4A;
 $light-background-color: #9DD6C2;
 $section-background-color: rgba(33, 33, 33, .3);
+$newest-border-color: #E6E4F3;
 $primary-color: gray;
 $accent-color: #2B201C;//#455F6A;
 $link-color: #faede8;
@@ -64,6 +65,7 @@ body {
 header{
   h1 {
     @include bumpGradient($accent-color, $primary-color, 20%, $primary-color);
+		font-family: "Lucida sans", sans-serif;
     text-align: center;
     margin: 0;
     border: {
@@ -87,6 +89,67 @@ article {
     right: 1%;
   }
 
+	h2 {
+		margin: 1%;
+	}
+
+	ul {
+		list-style-type: none;
+
+		a {
+			&:link {
+				color: $link-color;
+			}
+			&:visited {
+				color: $link-visited-color;
+			}
+			&:activated {
+				color: $link-activated-color;
+			}
+		}
+
+		p.site {
+			.in {
+				font-size: small;
+				float: right;
+			}
+		}
+
+		p.about {
+			margin: {
+				top: 0;
+				bottom: 0;
+				left: .3in;
+			}
+			padding: .07in;
+			border: {
+				style: solid;
+				width: $border-width;
+				radius: $small-radius;
+			}
+			background: #455F6A;
+			display: inline-block;
+		}
+	}
+
+	&#newest{
+		margin: {
+			left: 3%;
+			right: 3%;
+			bottom: 6%;
+		}
+		padding: {
+			left: 2%;
+			right: 2%;
+		}
+    border: {
+      color: $newest-border-color;
+      radius: $large-radius;
+      style: solid;
+      width: $border-width;
+    }
+	}
+
   section {
     background-color: $section-background-color;
     border: {
@@ -101,8 +164,6 @@ article {
     }
 
     h2 {
-      margin: 1%;
-
       &::after {
         font-family: Courier New, monotype;
         content: "►"
@@ -124,39 +185,9 @@ article {
     &.expanded h2::after {
       content: "▼"
     }
-
-    ul {
-      display: none;
-      list-style-type: none;
-
-      a {
-        &:link {
-          color: $link-color;
-        }
-        &:visited {
-          color: $link-visited-color;
-        }
-        &:activated {
-          color: $link-activated-color;
-        }
-      }
-
-      p.about {
-        margin: {
-          top: 0;
-          bottom: 0;
-          left: .3in;
-        }
-        padding: .07in;
-        border: {
-          style: solid;
-          width: $border-width;
-          radius: $small-radius;
-        }
-        background: #455F6A;
-        display: inline-block;
-      }
-    }
+		ul {
+			display: none;
+		}
     &.expanded ul {
       display: block;
     }
