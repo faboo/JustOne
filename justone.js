@@ -28,8 +28,8 @@
     });
   });
 
-  sites.newest = _.chain(newest).sort(function(site){
-	  return -parseInt(site.time, 10);
+  sites.newest = _.chain(newest).sortBy(function(site){
+	  return -site.time;
   }).take(newestSize).value();
 
   ko.applyBindings(sites, $('body')[0]);

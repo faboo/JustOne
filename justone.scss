@@ -84,10 +84,10 @@ header{
 }
 
 article {
-  margin: {
-    left: 1%;
-    right: 1%;
-  }
+	margin: {
+		left: 1%;
+		right: 1%;
+	}
 
 	h2 {
 		margin: 1%;
@@ -133,6 +133,7 @@ article {
 	}
 
 	&#newest{
+		background: $section-background-color;
 		margin: {
 			left: 3%;
 			right: 3%;
@@ -142,12 +143,12 @@ article {
 			left: 2%;
 			right: 2%;
 		}
-    border: {
-      color: $newest-border-color;
-      radius: $large-radius;
-      style: solid;
-      width: $border-width;
-    }
+		border: {
+		  color: $newest-border-color;
+		  radius: $large-radius;
+		  style: solid;
+		  width: $border-width;
+		}
 	}
 
   section {
